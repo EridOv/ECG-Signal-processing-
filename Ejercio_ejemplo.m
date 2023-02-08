@@ -1,4 +1,4 @@
-%EXAMEN PRACTICO 1
+%EJERCICIO PRACTICO 1
 %ERICKA DEYANIRA OVANDO BECERRIL
 X=load('Ej1_qrs.mat');
 % INTERVALOS RR
@@ -15,7 +15,7 @@ figure(2)
 subplot(2,2,1),plot(rr1s1a,rr2s1a,'*r'); title('s1a'), xlabel('RR(n+1)') ,ylabel('RR(n)');
 subplot(2,2,2),plot(intRR);
 figure(2)
-%Calcula	todos	los	índices	de	VFC en	el	dominio	de	la	frecuencia.
+%Calcula	todos	los	Ã­ndices	de	VFC en	el	dominio	de	la	frecuencia.
 [x,f,ufa1,vlfa1,lfa1,hfa1,ptotala1,hfnorma1,lfnorma1,lfhfa1]=indicesenfrecuencia(intRR,500);
 [x1,f1,ufa12,vlfa12,lfa12,hfa12,ptotala12,hfnorma12,lfnorma12,lfhfa12]=indicesenfrecuencia2(intRR,500);
 
@@ -27,7 +27,7 @@ disp('RMSSD SEGMENTO A1'),disp(RMSSD1Y1s1a);
 disp('SD1'),disp(SD1s1a);
 disp('SD2'),disp(SD2s1a);
 
-disp('INDICES EN FRECUENCIA CON FUNCIÓN PWECH');
+disp('INDICES EN FRECUENCIA CON FUNCIÃ“N PWECH');
 disp('HF SEGMENTO A1'),disp(hfa1);
 disp('LF SEGMENTO A1'),disp(lfa1);
 disp('uLFn SEGMENTO A1'),disp(ufa1);
@@ -36,7 +36,7 @@ disp('PotenciaTotal SEGMENTO A1'),disp(ptotala1);
 disp('hf normalizada SEGMENTO A1'),disp(hfnorma1);
 disp('lf normalizada SEGMENTO A1'),disp(lfnorma1);
 
-disp('INDICES EN FRECUENCIA CON FUNCIÓN /PERIODOGRAM');
+disp('INDICES EN FRECUENCIA CON FUNCIÃ“N /PERIODOGRAM');
 disp('HF SEGMENTO A1'),disp(hfa12);
 disp('LF SEGMENTO A1'),disp(lfa12);
 disp('uLFn SEGMENTO A1'),disp(ufa12);
